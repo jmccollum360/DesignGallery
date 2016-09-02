@@ -23,15 +23,11 @@ var jsSources = [
     });
 
     gulp.task('webserver', function(){
-       return gulp.src('dev/')
+       return gulp.src('builds/dev/')
         .pipe(webserver({
           livereload: true,
           open: true
         }));
-    });
-
-    gulp.task('watch', function(){
-      gulp.watch(sassSources, ['sass']);
     });
 
     gulp.task('default',['sass', 'js', 'webserver']);
