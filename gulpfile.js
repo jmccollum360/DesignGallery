@@ -9,7 +9,7 @@ var jsSources = [
     'components/scripts/jquery-3.1.0.min',
     'components/scripts/bootstrap.min.js'
   ]
-
+    
      gulp.task('sass', function(){
      return gulp.src(sassSources)
       .pipe(sass())
@@ -28,6 +28,11 @@ var jsSources = [
           livereload: true,
           open: true
         }));
+    });
+
+    gulp.task('watch', function(){
+      gulp.watch('sassSources', ['sass']);
+      gulp.watch('jsSources', ['js']);
     });
 
     gulp.task('default',['sass', 'js', 'webserver']);
