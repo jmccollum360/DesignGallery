@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jmccollum360/DesignGallery/issues"
   },
-  "homepage": "https://github.com/jmccollum360/DesignGallery#readme"
+  "homepage": "https://github.com/jmccollum360/DesignGallery#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
 }
