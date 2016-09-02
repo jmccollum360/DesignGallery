@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
     webserver = require('gulp-webserver');
 
 var sassSources = ('components/sass/*.scss');
