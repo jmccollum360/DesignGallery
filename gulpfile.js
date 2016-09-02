@@ -3,21 +3,22 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     webserver = require('gulp-webserver');
 
-var sassSources = ('dev/components/sass/*.scss');
-var jsSources =(['dev/components/scripts/jquery-3.1.0.min.js',
-                 'dev/components/scripts/bootstrap.min.js'
-]);
+var sassSources = ('components/sass/*.scss');
+var jsSources =[
+  'components/scripts/jquery-3.1.0.min.js',
+  'components/scripts/bootstrap.min.js'
+];
 
     gulp.task('sass', function(){
      return gulp.src(sassSources)
       .pipe(sass())
-      .pipe(gulp.dest('dev/css'))
+      .pipe(gulp.dest('builds/dev/css'))
     });
 
-    gulp.task('scripts', function(){
+    gulp.task('js', function(){
      return gulp.src(jsSources)
       .pipe(concat('scripts.js'))
-      .pipe(gulp.dest('dev/js'))
+      .pipe(gulp.dest('builds/dev/js'))
     });
 
     gulp.task('webserver', function(){
