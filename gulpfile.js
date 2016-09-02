@@ -1,14 +1,15 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    browserify = require('gulp-browserify'),
-    jquery = require('jquery'),
     webserver = require('gulp-webserver');
 
 var sassSources = ('components/sass/*.scss');
-var jsSources = ('components/scripts/bootstrap.min.js');
+var jsSources = [
+    'components/scripts/jquery-3.1.0.min',
+    'components/scripts/bootstrap.min.js'
+  ]
 
-    gulp.task('sass', function(){
+     gulp.task('sass', function(){
      return gulp.src(sassSources)
       .pipe(sass())
       .pipe(gulp.dest('builds/dev/css'))
