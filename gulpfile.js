@@ -34,4 +34,4 @@ var jsSources = [
       gulp.watch(sassSources, ['sass']);
     });
 
-    gulp.task('default',['watch', 'scripts', 'webserver']);
+    gulp.task('default',['sass', 'js', 'webserver']);
