@@ -3,8 +3,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     compass = require('gulp-compass'),
-    browserify = require('browserify'),
-    connect = require('gulp-connect'),
+    gutil = require('gulp-util'),
+    cssnano = require('cssnano'),
+    autoprefixer = require('autoprefixer'),
     webserver = require('gulp-webserver');
 
 var sassSources = ('components/sass/*.scss');
@@ -13,6 +14,10 @@ var jsSources = [
     'components/scripts/bootstrap.min.js'
   ];
     
+     gulp.task('default', function(){
+       return gutil.log('gulp running')
+     });
+
      gulp.task('compass', function(){
      return gulp.src(sassSources)
       .pipe(compass({
@@ -21,32 +26,15 @@ var jsSources = [
         style: 'expanded'
       }))
       .pipe(gulp.dest('builds/dev/css'))
-      .pipe(connect.reload())
     });
 
     gulp.task('js', function(){
      return gulp.src(jsSources)
       .pipe(concat('scripts.js'))
       .pipe(gulp.dest('builds/dev/js'))
-      .pipe(connect.reload())
-    });
-
-    gulp.task('watch', function(){
-      gulp.watch('components/sass/*.scss', ['compass']);
-      gulp.watch('jsSources', ['js']);
-      gulp.watch('builds/dev/*.html', ['html']);
-    });
-
-    gulp.task('connect', function(){
-      connect.server({
-        root: 'builds/dev/',
-        livereload: true
-      });
     });
 
     gulp.task('html', function(){
-      gulp.src('builds/dev/*.html')
-        .pipe(connect.reload());
+      gulp.src(dest + '*.html');
     });
 
-    gulp.task('default',['js', 'compass', 'watch', 'watch', 'connect']);

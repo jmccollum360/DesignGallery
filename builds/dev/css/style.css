@@ -7553,12 +7553,13 @@ body {
   padding: 0;
   font-size: 1.8rem;
   font-family: "lato", helvetica, sans-serif;
-  color: #7f8c8d;
+  background: #ecf0f1;
+  color: #200000;
 }
 
 .nav a {
   font-family: "raleway", helvetica, sans-serif;
-  color: #200000;
+  color: #7f8c8d;
   font-size: 1.6rem;
 }
 
