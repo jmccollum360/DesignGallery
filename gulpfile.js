@@ -5,10 +5,7 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver');
 
 var sassSources = ('components/sass/*.scss');
-var jsSources = [
-    'components/scripts/jquery-3.1.0.min',
-    'components/scripts/bootstrap.min.js'
-  ];
+var jsSources = (['components/scripts/jquery-3.1.0.min.js', 'components/scripts/bootstrap.min.js']);
 var build =('builds/dev');  
     
      gulp.task('sass', function(){

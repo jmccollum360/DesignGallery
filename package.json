@@ -17,14 +17,12 @@
   },
   "homepage": "https://github.com/jmccollum360/DesignGallery#readme",
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
-    "cssnano": "^3.7.4",
+    "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
-    "gulp-compass": "^2.1.0",
+    "gulp-bower": "0.0.13",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1"
   }
 }
