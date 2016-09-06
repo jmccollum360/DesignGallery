@@ -8,33 +8,16 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     webserver = require('gulp-webserver');
 
-var sassSources = ('components/sass/*.scss');
+var sassSrc = ('components/sass/*.scss');
+var sassDest =('builds/dev/css')
 var jsSources = [
     'components/scripts/jquery-3.1.0.min',
     'components/scripts/bootstrap.min.js'
   ];
+
+  gulp.task('html', function(){
+    gulp.src(dest + '*.html')
+  });
+
     
-     gulp.task('default', function(){
-       return gutil.log('gulp running')
-     });
-
-     gulp.task('compass', function(){
-     return gulp.src(sassSources)
-      .pipe(compass({
-        sass: 'components/sass',
-        image: 'builds/dev/images',
-        style: 'expanded'
-      }))
-      .pipe(gulp.dest('builds/dev/css'))
-    });
-
-    gulp.task('js', function(){
-     return gulp.src(jsSources)
-      .pipe(concat('scripts.js'))
-      .pipe(gulp.dest('builds/dev/js'))
-    });
-
-    gulp.task('html', function(){
-      gulp.src(dest + '*.html');
-    });
-
+    
