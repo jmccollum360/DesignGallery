@@ -5833,6 +5833,11 @@ body {
 .brand {
   margin-top: 25px; }
 
+.carousel-inner > .item > img {
+  padding-top: 50px;
+  min-width: 100%;
+  max-height: 500px; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
