@@ -11,20 +11,99 @@ body {
   color: $maroon;
 }
 
-.nav a {
-font-family: $font-main;
-color: $darkgrey;
-font-size: 1.6rem;
+.navbar {
+    background-color: rgba(255,255,255,.5)
+
+}
+.navbar-header {
+    max-height: 45px;
 }
 
-.brand{
-  margin-top: 25px;
+.navbar-brand > img {
+    max-height: 90px;
 }
 
-.carousel-inner > .item > img {
-  padding-top: 50px;
-  min-width: 100%;
-  max-height: 500px;
+.navbar-nav > li > .dropdown-menu:hover {
+    display: inline-block;
+}
+
+.main h3 {
+    
+    padding-top: 90px;
+    text-align: center;
+}
+
+.main > p {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+
+
+p.tag {
+    font-size: 1.7rem;
+    text-align: center;
+ 
+}
+
+.carousel img {
+    min-height: 400px;
+}
+
+.main img {
+    padding-bottom: 100px;
+    margin-left: 25%;
+}
+
+.gallery {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.gallery img {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 8px;
+     padding: 6px;
+     display: block;
+     margin: auto;
+}
+
+.gallery img:hover {
+    opacity: .6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    transition-timing-function: ease-out;
+    transition: .5s;
+}
+
+.gallery2 img {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+     border-radius: 8px;
+     padding: 6px;
+     display: block;
+     margin: auto;
+}
+
+.gallery2 img:hover {
+    opacity: .6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    transition-timing-function: ease-out;
+    transition: .5s;
+}
+
+.gallery h4 {
+    position: relative;
+    text-align:center;
+    color: $darkgrey;
+}
+
+.gallery
+
+.footer {
+    width: 100%;
+}
+
+.footer p{
+    text-align: center;
 }
 
 
