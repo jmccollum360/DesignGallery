@@ -5852,12 +5852,48 @@ p.tag {
 .carousel img {
   min-height: 400px; }
 
+.subscribe .btn {
+  float: right;
+  margin-right: 20px;
+  width: 100%; }
+
+#optin {
+  margin-bottom: 90px; }
+
+.terchLinks .btn {
+  display: block;
+  margin: 45px auto;
+  width: 75%; }
+
+.mission {
+  border-style: solid;
+  border-color: #200000;
+  border-width: 2px;
+  margin-top: 90px;
+  margin-bottom: 75px;
+  padding-bottom: 60px;
+  background: url("/images/tile.jpg") top left repeat; }
+
+.mission img {
+  padding: 20% 0 0; }
+
+.about {
+  padding: 90px 30px 0 0;
+  font-size: 1.8rem; }
+
+.you {
+  font-size: 1.8rem;
+  color: #200000; }
+
+.for-you > li {
+  font-size: 1.6rem; }
+
 .main img {
   padding-bottom: 100px;
   margin-left: 25%; }
 
 .gallery {
-  margin-top: 45px;
+  margin-top: 75px;
   margin-bottom: 45px; }
 
 .gallery img {
@@ -5865,7 +5901,7 @@ p.tag {
   border-radius: 8px;
   padding: 6px;
   display: block;
-  margin: auto; }
+  margin: 0 auto 75px auto; }
 
 .gallery img:hover {
   opacity: .6;
@@ -5891,9 +5927,39 @@ p.tag {
   text-align: center;
   color: #7f8c8d; }
 
-.gallery
+#optin {
+  background-color: #ecf0f1;
+  padding: 5px 0;
+  color: #95a5a6; }
+
+.btn-lg {
+  background-color: #c0392b;
+  color: #ecf0f1; }
+
+.btn-block {
+  margin-bottom: 15px; }
+
+.main-options {
+  margin: 60px;
+  background-image: url("dev/images/leather.jpg"); }
+
 .footer {
   width: 100%; }
+
+#optin btn {
+  width: 75%;
+  margin-bottom: 15px; }
+
+.services {
+  margin: 60px;
+  background-color: #7f8c8d;
+  height: 150px; }
+
+.team {
+  margin: 60px;
+  background-color: #bdc3c7;
+  height: 150px;
+  margin-bottom: 75px; }
 
 .footer p {
   text-align: center; }
