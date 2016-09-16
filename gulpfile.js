@@ -20,6 +20,7 @@ var build =('builds/dev');
      gulp.task('sass', function(){    //Takes all scss components and converts to css placing in dev folder
      return gulp.src(sassSources)
       .pipe(sass())
+      .pipe(uglify('style.css'))
       .pipe(gulp.dest('builds/dev/css'))
     });
 

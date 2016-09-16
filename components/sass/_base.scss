@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-size: 1.8rem;
   font-family: $font-highlight;
-  background: $offwhite;
+  background:$offwhite;
   color: $maroon;
 }
 
@@ -16,7 +16,7 @@ body {
 
 }
 .navbar-header {
-    max-height: 45px;
+    height: 45px;
 }
 
 .navbar-brand > img {
