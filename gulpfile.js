@@ -3,7 +3,6 @@ function once ready to put in production******/
 
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     webserver = require('gulp-webserver');
 
@@ -20,7 +19,6 @@ var build =('builds/dev');
      gulp.task('sass', function(){    //Takes all scss components and converts to css placing in dev folder
      return gulp.src(sassSources)
       .pipe(sass())
-      .pipe(uglify('style.css'))
       .pipe(gulp.dest('builds/dev/css'))
     });
 
