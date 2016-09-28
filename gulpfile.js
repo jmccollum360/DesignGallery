@@ -43,4 +43,8 @@ var build =('builds/dev');
       }));
     });
 
-    gulp.task('default',['js', 'watch', 'sass', 'webserver']);  //run with just gulp and goes through each function
+    gulp.task('html', function(){
+      gulp.src('builds/dev/*.html')
+    });
+
+    gulp.task('default',['js', 'watch', 'html', 'sass', 'webserver']);  //run with just gulp and goes through each function

@@ -1,3 +1,4 @@
+
 html {
   font-size: 62.5%;
 }
@@ -7,218 +8,48 @@ body {
   padding: 0;
   font-size: 1.8rem;
   font-family: $font-highlight;
-  background: $offwhite;
+  background:$offwhite;
   color: $maroon;
+}
+
+.top-bar {
+  background-color: $darkgrey;
+  color: $offwhite;
+}
+.phone {
+  float: right;
 }
 
 .navbar {
     background-color: rgba(255,255,255,.5)
 
 }
-.navbar-header {
-    max-height: 45px;
-}
 
 .navbar-brand > img {
-    max-height: 90px;
+  max-height: 90px;
 }
 
-.navbar-nav > li > .dropdown-menu:hover {
-    display: inline-block;
-}
-
-.main h3 {
-    
-    padding-top: 90px;
-    text-align: center;
-}
-
-.main > p {
-    text-align: center;
-    padding-bottom: -90px;
-}
-
-p.tag {
-    font-size: 1.7rem;
-    text-align: center;
-    padding-bottom: 45px;
-}
-
-.carousel {
-     margin-left: -15px;
-    margin-right: -15px;
-}
-
-.carousel img {
-    min-height: 400px;
-}
-
-.subscribe .btn {
-    float: right;
-    width: 100%;
-} 
-
-.subscribe .btn:hover {
-    box-shadow: 5px 5px 5px  grey;
-    opacity: .8;
-    color: $offwhite;
-}
-
-.subscribe .btn:visited {
-    color: $offwhite;
-}
-
-.terchLinks .btn{
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-}
-
-.callUs {float: right;
-    width: 350px;
-    margin-top: -120px;
-}
-
-.mission {
-    border-style: solid;
-    border-color: $maroon;
-    border-width: 2px;
-    margin-top: 90px;
-    margin-bottom: 75px;
-    padding-bottom: 60px;
-    background: url('/images/tile.jpg') top left repeat;
-}
-
-.terchLinks {
-    background: url(/images/tile2.jpg) top left repeat;
-    margin: 0 -15px;
-    height: 400px;
-    padding-top: 45px;
-}
-
-.mission img {
-    padding: 20% 0 0;
-}
-
-.side-pic img {
-    float: right;
-    width: 350px;
-    padding: 10px;
+#mainNavbar {
+  margin-top: 45px;
 }
 
 
-.about {
-    padding: 90px 30px 0 0;
-    font-size: 1.8rem;
+.main > h3 {
+  margin-top: 45px;
+  text-align: center;
 }
 
-.you {
-    font-size: 1.8rem;
-    color: $maroon;
+.tag {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.for-you > li {
-    font-size: 1.6rem;
+.footer p {
+  text-align: center;
 }
 
-.main img {
-    padding-bottom: 100px;
-    margin-left: 25%;
+@media screen and (min-width: 768px) {
+  #mainNavbar {
+  margin-top: 0;
+  }
 }
-
-
-.gallery {
-    margin-top: 75px;
-    margin-bottom: 45px;
-}
-
-.gallery img {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 8px;
-     padding: 6px;
-     display: block;
-     margin: 0 auto 75px auto;
-}
-
-.gallery img:hover {
-    opacity: .6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    transition-timing-function: ease-out;
-    transition: .5s;
-}
-
-.gallery2 img {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-     border-radius: 8px;
-     padding: 6px;
-     display: block;
-     margin: auto;
-}
-
-.gallery2 img:hover {
-    opacity: .6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    transition-timing-function: ease-out;
-    transition: .5s;
-}
-
-.social img {
-    width: 40px;
-    height: 40px;
-    float: right;
-
-}
-
-.gallery h4 {
-    position: relative;
-    text-align:center;
-    color: $darkgrey;
-}
-
-#optin {
-    background-color: $silver;
-    color: $royal;
-    margin: 0 -15px;
-    padding: 5px;
-}
-
-.btn-md {
-    background-color: $red;
-    color: $offwhite;
-}
-
-.main-options {
-    margin: 60px;
-    background-image: url('dev/images/leather.jpg')
-}
-
-
-
-.footer {
-    width: 100%;
-}
-
-#optin .btn {
-    width: 400px;
-}
-
-.services {
-    margin: 60px;
-    background-color: $darkgrey;
-    height: 150px;
-}
-
-.team {
-    margin: 60px;
-    background-color: $silver;
-    height: 150px;
-    margin-bottom: 75px;
-}
-
-.footer p{
-    text-align: center;
-}
-
-
-
-
