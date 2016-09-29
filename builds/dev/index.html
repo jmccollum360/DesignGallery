@@ -19,9 +19,9 @@
 
 <!-- STYLES (concatenated by gulp process)
 =====================================================================================-->
-
+    
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/font-awesome.min" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -36,14 +36,56 @@
 
   <div class="top-bar">
     <div class="container">
-      <div class="col-sm-9 social">
-        
-      </div>
-      <div class="col-sm-3">
-        <p class="phone glyphicon glyphicon-earphone"> 970.226.1000</p>
-      </div>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <nav class="top-menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-google-plus-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-pinterest-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-youtube-square"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> <!--col-->
+        <div class="col-sm-6 col-md-6">
+          <nav class="top-menu pull-right">
+            <ul>
+              <li>
+                <p>Free consultation:</p>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </li>
+              <li>
+                <p class="phone-num"> 970.226.1000</p>
+              </li>
+            </ul>
+          </nav> 
+        </div> <!--col-->
+      </div> <!--row-->
+    </div> <!--container-->
+  </div> <!--top-bar-->
 
 <!--NAVBAR
 ================================================================ -->
@@ -128,9 +170,37 @@
     </div>
   </div>
 
+  <div class="option-content">
+    <div class="container">
+      <div class="row selections">
+        <div class="col-sm-4">
+          <select name="select" class="form-control">
+            <option value="value1" selected>SHOWROOM</option> 
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </div> <!--col-->
+        <div class="col-sm-4">
+          <select name="select" class="form-control">
+            <option value="value1" selected>PRODUCTS</option> 
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </div> <!--col-->
+        <div class="col-sm-4">
+          <select name="select" class="form-control">
+            <option value="value1" selected>GALLERY</option> 
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </div> <!--col-->
+      </div> <!--row-->
+    </div> <!--container-->
+  </div> <!--option-content-->
+
 <!--FOOTER
 =====================================================================================-->
-		<footer class="footer navbar-fixed-bottom">
+		<footer class="footer">
 			<p>2100 E. Prospect Rd. Fort Collins, CO Ph: 970.226.1000 or Toll Free: 877.777.7241</p>
 			<p>&copy; 2016 Sutherland Lumber Co.</p>
 		</footer>
