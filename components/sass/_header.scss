@@ -1,0 +1,50 @@
+.top-bar {
+  background-color: $maroon;
+  color: $offwhite;
+  height: 40px;
+}
+
+.top-menu a {
+  display: inline-block;
+	color: $white;
+  opacity: .8;
+  padding: 0 10px;
+  border-right: 1px solid rgba(0,0,0,.1);
+  font-weight: 400;
+}
+
+.top-menu a:hover {
+	opacity: 1;
+}
+
+.top-menu ul {
+  list-style: none;
+}
+
+.top-menu li {
+  display: inline;
+  line-height: 40px;
+}
+
+.top-menu li:first-child a{
+  border-left: 1px solid rgba(0,0,0,.1);
+}
+
+.top-menu i {
+  font-size: 15px;
+}
+
+.top-menu p {
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: .07em;
+  font-family: 'Raleway';
+}
+
+.fa-phone {
+  padding-left: 15px;
+}
+
+p.phone-num {
+  font-family: 'Roboto';
+}
