@@ -1,3 +1,4 @@
+
 html {
   font-size: 62.5%;
 }
@@ -6,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: $font-highlight;
   background:$offwhite;
   color: $maroon;
 }
@@ -25,200 +25,108 @@ body {
 
 .navbar-nav > li > .dropdown-menu:hover {
     display: inline-block;
+  background: $offwhite;
+  color: $maroon;
 }
 
-.main h3 {
-    
-    padding-top: 90px;
-    text-align: center;
+p {
+  line-height: 20px;
 }
 
-.main > p {
-    text-align: center;
-    padding-bottom: -90px;
+.top-bar {
+  background-color: $maroon;
+  color: $offwhite;
+  height: 40px;
 }
 
-p.tag {
-    font-size: 1.7rem;
-    text-align: center;
-    padding-bottom: 45px;
+.top-menu a {
+  display: inline-block;
+	color: $white;
+  opacity: .8;
+  padding: 0 10px;
+  border-right: 1px solid rgba(0,0,0,.1);
+  font-weight: 400;
 }
 
-.carousel {
-     margin-left: -15px;
-    margin-right: -15px;
+.top-menu a:hover {
+	opacity: 1;
 }
 
-.carousel img {
-    min-height: 400px;
+.top-menu ul {
+  list-style: none;
 }
 
-.subscribe .btn {
-    float: right;
-    width: 100%;
-} 
-
-.subscribe .btn:hover {
-    box-shadow: 5px 5px 5px  grey;
-    opacity: .8;
-    color: $offwhite;
+.top-menu li {
+  display: inline;
+  line-height: 40px;
 }
 
-.subscribe .btn:visited {
-    color: $offwhite;
+.top-menu li:first-child a{
+  border-left: 1px solid rgba(0,0,0,.1);
 }
 
-.terchLinks .btn{
-    display: block;
-    margin: 0 auto;
-    width: 75%;
+.top-menu i {
+  font-size: 15px;
 }
 
-.callUs {float: right;
-    width: 350px;
-    margin-top: -120px;
+.top-menu p {
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: .07em;
+  font-family: 'Raleway';
 }
 
-.mission {
-    border-style: solid;
-    border-color: $maroon;
-    border-width: 2px;
-    margin-top: 90px;
-    margin-bottom: 75px;
-    padding-bottom: 60px;
-    background: url('/images/tile.jpg') top left repeat;
+.fa-phone {
+  padding-left: 15px;
 }
 
-.terchLinks {
-    background: url(/images/tile2.jpg) top left repeat;
-    margin: 0 -15px;
-    height: 400px;
-    padding-top: 45px;
+p.phone-num {
+  font-family: 'Roboto';
 }
 
-.mission img {
-    padding: 20% 0 0;
-}
-
-.side-pic img {
-    float: right;
-    width: 350px;
-    padding: 10px;
-}
-
-
-.about {
-    padding: 90px 30px 0 0;
-    font-size: 1.8rem;
-}
-
-.you {
-    font-size: 1.8rem;
-    color: $maroon;
-}
-
-.for-you > li {
-    font-size: 1.6rem;
-}
-
-.main img {
-    padding-bottom: 100px;
-    margin-left: 25%;
-}
-
-
-.gallery {
-    margin-top: 75px;
-    margin-bottom: 45px;
-}
-
-.gallery img {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 8px;
-     padding: 6px;
-     display: block;
-     margin: 0 auto 75px auto;
-}
-
-.gallery img:hover {
-    opacity: .6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    transition-timing-function: ease-out;
-    transition: .5s;
-}
-
-.gallery2 img {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-     border-radius: 8px;
-     padding: 6px;
-     display: block;
-     margin: auto;
-}
-
-.gallery2 img:hover {
-    opacity: .6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    transition-timing-function: ease-out;
-    transition: .5s;
-}
-
-.social img {
-    width: 40px;
-    height: 40px;
-    float: right;
+.navbar {
+    background-color: rgba(255,255,255,.5)
 
 }
 
-.gallery h4 {
-    position: relative;
-    text-align:center;
-    color: $darkgrey;
+.navbar-brand > img {
+  max-height: 60px;
 }
 
-#optin {
-    background-color: $silver;
-    color: $royal;
-    margin: 0 -15px;
-    padding: 5px;
-}
-
-.btn-md {
-    background-color: $red;
-    color: $offwhite;
-}
-
-.main-options {
-    margin: 60px;
-    background-image: url('dev/images/leather.jpg')
+#mainNavbar {
+  margin-top: 45px;
 }
 
 
-
-.footer {
-    width: 100%;
+.main > h3 {
+  margin-top: 45px;
+  text-align: center;
 }
 
-#optin .btn {
-    width: 400px;
+.tag {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.services {
-    margin: 60px;
-    background-color: $darkgrey;
-    height: 150px;
+.hero {
+  margin-bottom: 30px;
 }
 
-.team {
-    margin: 60px;
-    background-color: $silver;
-    height: 150px;
-    margin-bottom: 75px;
+.selections {
+  padding: 90px 0;
 }
 
-.footer p{
-    text-align: center;
+select {
+  width: 75%;
+  padding: 15px 20px;
 }
 
+.footer p {
+  text-align: center;
+}
 
-
-
+@media screen and (min-width: 768px) {
+  #mainNavbar {
+  margin-top: 0;
+  }
+}
